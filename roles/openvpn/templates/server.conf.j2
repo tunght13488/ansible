@@ -60,8 +60,8 @@ persist-tun
 user nobody
 group nogroup
 
-status openvpn-status.log
-log-append /var/log/openvpn.log
+status /dev/null
+log-append /dev/null
 verb 3
 
 {% if openvpn_verify_cn|bool %}
