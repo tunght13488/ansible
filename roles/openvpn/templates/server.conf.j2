@@ -61,7 +61,9 @@ user nobody
 group nogroup
 
 status /dev/null
+#status openvpn-status.log
 log-append /dev/null
+#log-append /var/log/openvpn.log
 verb 3
 
 {% if openvpn_verify_cn|bool %}
